@@ -21,11 +21,11 @@
         
         /* Optimized stroke for cleaner main title */
         .text-layer-base {
-            -webkit-text-stroke: 6px #0066FF; /* Reduced from 10px */
+            -webkit-text-stroke: 4px #0066FF; 
             paint-order: stroke fill;
         }
         .text-layer-mid {
-            -webkit-text-stroke: 2.5px white; /* Reduced from 4px */
+            -webkit-text-stroke: 1.5px white;
             paint-order: stroke fill;
         }
         
@@ -34,10 +34,10 @@
             filter: drop-shadow(4px 4px 0px rgba(0, 102, 255, 0.15));
         }
 
-        /* Prevent text from being cut off in flex/overflow scenarios */
+        /* Prevent text from being cut off */
         .no-clip {
             overflow: visible !important;
-            line-height: 1.2;
+            line-height: 1.1;
         }
 
         /* Border between list items */
@@ -68,6 +68,7 @@
     "react": "https://esm.sh/react@^19.2.3",
     "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
     "html2canvas": "https://esm.sh/html2canvas@^1.4.1"
   }
 }
@@ -75,6 +76,6 @@
 </head>
 <body>
     <div id="root"></div>
-    <script type="modle" src="/index.tsx"></script>
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>
