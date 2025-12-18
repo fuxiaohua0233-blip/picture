@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHS Poster Pro Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;700;900&family=Luckiest+Guy&family=Bangers&family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+        }
+        .font-xhs-art {
+            font-family: 'ZCOOL KuaiLe', cursive;
+        }
+        .font-number {
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        
+        /* Optimized stroke for cleaner main title */
+        .text-layer-base {
+            -webkit-text-stroke: 6px #0066FF; /* Reduced from 10px */
+            paint-order: stroke fill;
+        }
+        .text-layer-mid {
+            -webkit-text-stroke: 2.5px white; /* Reduced from 4px */
+            paint-order: stroke fill;
+        }
+        
+        /* Floating effect for stickers */
+        .sticker-shadow {
+            filter: drop-shadow(4px 4px 0px rgba(0, 102, 255, 0.15));
+        }
+
+        /* Prevent text from being cut off in flex/overflow scenarios */
+        .no-clip {
+            overflow: visible !important;
+            line-height: 1.2;
+        }
+
+        /* Border between list items */
+        .item-row-border {
+            border-bottom: 1px solid #E2E8F0;
+        }
+        .item-row-border:last-child {
+            border-bottom: none;
+        }
+
+        /* Custom scrollbar for editor */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

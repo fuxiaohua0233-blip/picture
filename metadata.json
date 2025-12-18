@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Xiaohongshu Style Poster Generator",
+  "description": "A high-fidelity medical educational poster generator inspired by Xiaohongshu (Little Red Book) style, featuring 3:4 aspect ratio, bold typography, and thick borders. Supports real-time text editing and image download.",
+  "requestFramePermissions": []
+}
